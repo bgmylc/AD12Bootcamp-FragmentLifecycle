@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sayac_nav"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.begumyolcu.sayacfragment.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_girisToSayac"
+            app:destination="@id/sayacFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayacFragment"
+        android:name="com.begumyolcu.sayacfragment.SayacFragment"
+        android:label="fragment_sayac"
+        tools:layout="@layout/fragment_sayac" />
+</navigation>
